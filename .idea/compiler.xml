@@ -6,12 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="testwebsocket" />
         <module name="websocket" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="testwebsocket" target="1.8" />
       <module name="websocket" target="1.5" />
     </bytecodeTargetLevel>
   </component>

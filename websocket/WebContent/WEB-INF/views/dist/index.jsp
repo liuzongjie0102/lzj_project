@@ -12,7 +12,7 @@
   </head>
   <body>
   <div id="app"></div>
-  <button onclick="sayMarco()">send</button>
+  <%--<button onclick="sayMarco()">send</button>--%>
   <script type="text/javascript" src="js/build.js"></script>
   <%--<script src="https://cdn.bootcss.com/sockjs-client/1.1.4/sockjs.min.js"></script>--%>
   <%--<script>--%>

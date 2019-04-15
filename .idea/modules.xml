@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lzj_project.iml" filepath="$PROJECT_DIR$/lzj_project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/testwebsocket/testwebsocket.iml" filepath="$PROJECT_DIR$/testwebsocket/testwebsocket.iml" />
       <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
     </modules>
   </component>

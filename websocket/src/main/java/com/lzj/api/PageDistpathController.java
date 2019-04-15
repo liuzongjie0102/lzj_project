@@ -13,7 +13,7 @@ public class PageDistpathController {
 
         System.out.println("/index");
         ModelAndView mv = new ModelAndView();
-        mv.setViewName("/dist/index.jsp");
+        mv.setViewName("/dist/index.html");
         return mv;
     }
 }
