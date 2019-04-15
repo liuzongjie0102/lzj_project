@@ -28,16 +28,4 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
         stompEndpointRegistry.addEndpoint("/webServer").setAllowedOrigins("*").withSockJS();
 
     }
-//
-//    @Override
-//    public void configureMessageBroker(MessageBrokerRegistry registry)
-//    {
-//
-//        //表明在topic、queue、users这三个域上可以向客户端发消息。
-//        registry.enableSimpleBroker("/topic","/user").setHeartbeatValue(new long[]{15000,15000});
-//        //客户端向服务端发起请求时，需要以/app为前缀。
-////        registry.setApplicationDestinationPrefixes("/app");
-//        //给指定用户发送一对一的消息前缀是/users/。
-////        registry.setUserDestinationPrefix("/users/");
-//    }
 }

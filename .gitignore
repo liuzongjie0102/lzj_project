@@ -6,8 +6,9 @@
 .idea
 *.iml
 out
-/lib
-/classes
+lib
+target
+classes
 .mvn
 gen### Java template
 # Compiled class file
