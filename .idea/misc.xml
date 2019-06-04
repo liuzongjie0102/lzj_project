@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/NIO2/pom.xml" />
+        <option value="$PROJECT_DIR$/TestDataSet/pom.xml" />
       </list>
     </option>
   </component>

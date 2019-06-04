@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="NIO2" />
+        <module name="TestDataSet" />
         <module name="websocket" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="websocket" target="1.5" />
+    <bytecodeTargetLevel target="8">
+      <module name="TestDataSet" target="8" />
+      <module name="websocket" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
