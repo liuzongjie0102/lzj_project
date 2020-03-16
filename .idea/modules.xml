@@ -3,7 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TestDataSet/TestDataSet.iml" filepath="$PROJECT_DIR$/TestDataSet/TestDataSet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestPoi/TestPoi.iml" filepath="$PROJECT_DIR$/TestPoi/TestPoi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auto-request/auto-request.iml" filepath="$PROJECT_DIR$/auto-request/auto-request.iml" />
+      <module fileurl="file://$PROJECT_DIR$/edc-plsqltool-ms-test/edc-plsqltool-ms-test.iml" filepath="$PROJECT_DIR$/edc-plsqltool-ms-test/edc-plsqltool-ms-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/lzj_project.iml" filepath="$PROJECT_DIR$/lzj_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nettywebsocket/nettywebsocket.iml" filepath="$PROJECT_DIR$/nettywebsocket/nettywebsocket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/temdemo/temdemo.iml" filepath="$PROJECT_DIR$/temdemo/temdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/websocket/websocket.iml" filepath="$PROJECT_DIR$/websocket/websocket.iml" />
     </modules>
   </component>

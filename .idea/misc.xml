@@ -6,6 +6,12 @@
         <option value="$PROJECT_DIR$/websocket/pom.xml" />
         <option value="$PROJECT_DIR$/NIO2/pom.xml" />
         <option value="$PROJECT_DIR$/TestDataSet/pom.xml" />
+        <option value="$PROJECT_DIR$/TestPoi/pom.xml" />
+        <option value="$PROJECT_DIR$/nettywebsocket/pom.xml" />
+        <option value="$PROJECT_DIR$/temdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/edcplsqltoolmstest/pom.xml" />
+        <option value="$PROJECT_DIR$/edc-plsqltool-ms-test/pom.xml" />
+        <option value="$PROJECT_DIR$/auto-request/pom.xml" />
       </list>
     </option>
   </component>

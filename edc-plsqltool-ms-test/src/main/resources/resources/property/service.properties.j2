@@ -1,0 +1,68 @@
+#请求资产接口
+com.newland.edc.cct.dataasset.entity.service.IDataAssetEntityService=http://{{ lb_vip }}:{{ comm_vip_port }}/{{ edc_dataasset_svc_folder }}/services/IDataAssetEntityService
+com.newland.edc.cct.dataasset.entity.service.IDataAssetSubscribeService=http://{{ lb_vip }}:{{ comm_vip_port }}/{{ edc_dataasset_svc_folder }}/services/IDataAssetSubscribeService
+com.newland.edc.cct.dataasset.dispose.service.IDataAssetEntityDisposeService=http://{{ lb_vip }}:{{ comm_vip_port }}/{{ edc_dataasset_svc_folder }}/services/IDataAssetEntityDisposeService
+com.newland.edc.cct.dataasset.tenantres.service.ITenantResourceService=http://{{ lb_vip }}:{{ comm_vip_port }}/{{ edc_dataasset_svc_folder }}/services/ITenantResourceService
+com.newland.edc.cct.frame.soap.service.ICctAuthService=http://{{ lb_vip }}:{{ comm_vip_port }}/{{ edc_cct_svc_folder }}/services/ICctAuthService
+
+#网关接口
+edc-dgw-ms=http://{{ lb_vip }}:{{ comm_vip_port }}/{{ edc_dgw_ms_product }}/v1
+#门户接口
+nl-edc-cct-sys-ms=http://{{ lb_vip }}:{{ comm_vip_port }}/{{ edc_cct_system_ms_server_name }}/v1/
+#查询变量服务
+services-env=http://{{ lb_vip }}:{{ comm_svc_port }}/services
+
+#公共服务接口请求地址
+edc-pub-system-ms=http://{{ lb_vip }}:{{ comm_vip_port }}/{{ edc_pub_system_ms_folder }}/v1
+
+#组件化接口配置
+REG_QUERYTABLELIST_UDAP=http://{{ lb_vip }}:{{ ng_comm_vip_port }}/{{ udap_develop_svc_folder }}/v1/workflow/task/dataDevelop/dbData
+#门户4A金库地址
+PLSQL_4A_SYSTEM_URL=http://{{ lb_vip }}:{{ comm_vip_port }}
+
+#是否开启金库认证 0关闭/1开启
+PLSQL_4AJK_SWITCH={{ plsqltool_4ajk_switch }}
+#是否过滤数据库前缀 0关闭/1开启
+TAB_VIEW_SWITCH={{ plsqltool_tab_view_switch }}
+#目前支持类型oracle,hive,db2,greenplum,mysql,gbase
+TAB_VIEW_RESOURCE_TYPE={{ plsqltool_tab_view_resource_type }}
+#需要控制权限的字段 home_city,city_id,home_code,home_county
+TAB_VIEW_COL_NAME={{ plsqltool_tab_view_col_name }}
+
+#是否支撑truncate语句 0关闭/1开启
+DE_TABLE_TRUNCATE={{ plsqltool_is_truncate }}
+#定义实体是否支撑DML语句 0关闭/1开启
+DE_TABLE_DML={{ plsqltool_is_dml }}
+#是否使用his表 0关闭/1开启
+PLS_USER_HIS={{ plsqltool_is_use_his }}
+#是否过滤重要资源 0关闭/1开启
+PLS_IMPORTANT_DBRESOURCE={{ plsqltool_is_filter_important_db }}
+#重要资源连接串；多个用逗号隔开
+PLS_IMPORTANT_DBNAME={{ plsqltool_filter_important_db_values }}
+
+#任务池
+PLS_EXECUTE_HIVE_ASY_POOL=20
+PLS_EXECUTE_HIVE_SYN_POOL=10
+PLS_EXECUTE_ORACLE_ASY_POOL=20
+PLS_EXECUTE_ORACLE_SYN_POOL=10
+PLS_EXECUTE_DB2_ASY_POOL=20
+PLS_EXECUTE_DB2_SYN_POOL=10
+PLS_EXECUTE_GREENPLUM_ASY_POOL=20
+PLS_EXECUTE_GREENPLUM_SYN_POOL=10
+PLS_EXECUTE_MYSQL_ASY_POOL=20
+PLS_EXECUTE_MYSQL_SYN_POOL=10
+PLS_EXECUTE_GBASE_ASY_POOL=20
+PLS_EXECUTE_GBASE_SYN_POOL=10
+FTP_FILE_SYNCHRONOUS_POOL=3
+#执行结果清理时间
+PLS_EXECUTE_RESULT=7
+#执行日志清理时间
+PLS_EXECUTE_LOG=7
+
+#导出文件清理时间
+PLS_DOWNLOAD_FILE_KEEP=7
+#导出数据上限 -1：不做限制
+MAXCOUNT=5000000
+
+#4A金库配置
+PLSQL_4AJK_DATA={{ plsqltool_4ajk_data }}

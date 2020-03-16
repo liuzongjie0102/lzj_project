@@ -3,7 +3,6 @@ package com.lzj.test;
 public class RorCInfo {
 
     private Integer index;//对应的列数据
-
     private String af_id;
     private String element_id;
     private String element_name;
@@ -48,5 +47,14 @@ public class RorCInfo {
 
     public void setIndex(Integer index) {
         this.index = index;
+    }
+
+    @Override public boolean equals(Object obj) {
+        RorCInfo rorCInfo = (RorCInfo)obj;
+        if (this.af_id == rorCInfo.getAf_id() && this.element_id == rorCInfo.getElement_id() &&
+        this.element_name == rorCInfo.getElement_name() && this.element_type == rorCInfo.getElement_type()){
+            return true;
+        }
+        return false;
     }
 }

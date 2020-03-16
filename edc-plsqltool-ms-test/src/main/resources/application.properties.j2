@@ -1,0 +1,91 @@
+server.port={{ edc_plsqltool_ms_server_port }}
+server.context-path=/{{ edc_plsqltool_ms_folder }}
+spring.application.name={{ edc_plsqltool_ms_folder }}
+cmcc.web.servlet-path=/v1
+plsqltool.systemid=73191008
+
+server.maxHttpHeaderSize=102400
+spring.http.encoding.force=true
+spring.http.encoding.charset=UTF-8
+spring.http.encoding.enabled=true
+server.tomcat.uri-encoding=UTF-8
+
+# 加密方式：会同时影响到业务库和redis库密码 bi/sam/null
+cmcc.db.encrypt={{ encrypt_type }}
+
+#内部服务访问用户以及密码
+internal.server.access.user={{ internal_server_access_user }}
+internal.server.access.password={{ internal_server_access_password }}
+
+# 数据库信息
+spring.druid.url={{ udmp_jdbc_url }}
+spring.druid.username={{ udmp_jdbc_username }}
+spring.druid.password={{ udmp_jdbc_password_des }}
+spring.druid.driver-class-name={{ jdbc_driver }}
+
+# eureka注册服务（修改）
+eureka.instance.peer1={{ eureka_1 }}
+eureka.instance.peer2={{ eureka_2 }}
+eureka.instance.port={{ eureka_server_port }}
+eureka.instance.preferIpAddress=true
+eureka.instance.metadata-map.cluster=default
+# 每隔5s向服务端发送一次心跳，证明自己依然”存活“
+eureka.instance.lease-renewal-interval-in-seconds=5
+# 如果8s之内没有向服务端发送心跳，将我踢出掉。
+eureka.instance.lease-expiration-duration-in-seconds=8
+# 是否将自己注册到Eureka Server
+eureka.client.registerWithEureka=true
+# 是否从Eureka Server获取注册信息
+eureka.client.fetchRegistry=true
+eureka.client.serviceUrl.defaultZone=http://${discovery-user.name}:${discovery-user.password}@${eureka.instance.peer1}:${eureka.instance.port}/eureka/,http://${discovery-user.name}:${discovery-user.password}@${eureka.instance.peer2}:${eureka.instance.port}/eureka/
+#eureka注册服务用户名密码（修改）
+discovery-user.name={{ eureka_username }}
+discovery-user.password={{ eureka_password }}
+# ribbon 超时时间
+ribbon.ReadTimeout=60000
+ribbon.ConnectTimeout=60000
+
+# FTP配置信息
+pls.ftp.type={{ ftp_type }}
+pls.ftp.host={{ ftp_host }}
+pls.ftp.port={{ ftp_port }}
+pls.ftp.username={{ ftp_username }}
+pls.ftp.password={{ ftp_password_des }}
+
+#hive转发环境变量 A=华为 C=苏研
+env.type={{ plsqltool_env_type }}
+#实体导出版本 fj/hn
+resaddress.version={{ plsqltool_resaddress_version }}
+#是否开启igntie 0/1
+dgw.ignite.isrun={{ plsqltool_ignite_isrun }}
+
+#缓存刷新 计划时间
+DataAsset.QuerySubEntityList.Task=1 0/10 * * * ?
+#数据清理 计划时间
+DataAsset.DataCleaner.Task=0 0 0 * * ?
+#心跳刷新 计划时间
+DataAsset.ExecutePoolHeartbeat.Task=*/5 * * * * ?
+#导出任务 线程 true/false
+ExportTaskScanner={{ plsqltool_export_enabled }}
+Export.Task.Scanner=*/10 * * * * ?
+#导出清理 线程 true/false
+ExportTaskCleaner={{ plsqltool_exportCleaner_enabled }}
+Export.Task.Cleaner=1 0/10 * * * ?
+#数据导入 总开关 true/false
+ImporterEntityThread={{ plsqltool_import_enabled }}
+Importer.Task.Scheduled=0 * * * * ?
+#数据导入 非hive导入开关 true/false
+ImporterEntityThread.default={{ plsqltool_importHive_enabled }}
+#HDFS的默认路径
+Importer.hive.tmpHdfsDir=/tmp/dataFile
+
+#flyway配置
+flyway.enabled={{ pub_system_flyway_enabled }}
+#flaway使用druid过滤项
+spring.druid.filters=stat,slf4j
+flyway.baseline-on-migrate=true
+#是否开启校验
+flyway.validate-on-migrate=false
+# 默认脚本加载路径：/db/migration
+flyway.locations=classpath:/db/{{ jdbc_type }}
+flyway.table=schema_version_pls

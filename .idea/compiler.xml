@@ -6,14 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="auto-request" />
+        <module name="edc-plsqltool-ms-test" />
+        <module name="nettywebsocket" />
         <module name="NIO2" />
+        <module name="temdemo" />
         <module name="TestDataSet" />
+        <module name="TestPoi" />
         <module name="websocket" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="TestDataSet" target="8" />
-      <module name="websocket" target="8" />
+      <module name="auto-request" target="1.8" />
+      <module name="edc-plsqltool-ms-test" target="1.8" />
+      <module name="nettywebsocket" target="1.5" />
+      <module name="temdemo" target="1.5" />
+      <module name="TestDataSet" target="1.5" />
+      <module name="TestPoi" target="1.5" />
+      <module name="websocket" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
