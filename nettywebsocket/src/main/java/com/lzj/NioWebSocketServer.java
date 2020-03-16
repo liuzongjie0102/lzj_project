@@ -28,7 +28,7 @@ public class NioWebSocketServer {
         }finally {
             boss.shutdownGracefully();
             work.shutdownGracefully();
-            log.info("websocket服务器已关闭");
+            log.info("websocket服务器已关闭1");
         }
     }
 
