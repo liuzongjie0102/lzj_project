@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/tuling-enhance-plugin-master/test-web" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/websocket/pom.xml" />
         <option value="$PROJECT_DIR$/NIO2/pom.xml" />
         <option value="$PROJECT_DIR$/TestDataSet/pom.xml" />
+        <option value="$PROJECT_DIR$/springaop/pom.xml" />
+        <option value="$PROJECT_DIR$/tuling-enhance-plugin-master/pom.xml" />
+        <option value="$PROJECT_DIR$/transdata/pom.xml" />
       </list>
     </option>
   </component>

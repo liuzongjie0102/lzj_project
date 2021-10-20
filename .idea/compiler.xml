@@ -7,13 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="NIO2" />
+        <module name="spring-enhance-plugin" />
+        <module name="springaop" />
+        <module name="test-plugin" />
+        <module name="test-web" />
         <module name="TestDataSet" />
+        <module name="transdata" />
         <module name="websocket" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
-      <module name="TestDataSet" target="8" />
-      <module name="websocket" target="8" />
+      <module name="spring-enhance-plugin" target="1.7" />
+      <module name="springaop" target="1.5" />
+      <module name="test-plugin" target="1.5" />
+      <module name="test-web" target="1.7" />
+      <module name="TestDataSet" target="1.5" />
+      <module name="transdata" target="1.8" />
+      <module name="tuling-enhance-plugin" target="1.5" />
+      <module name="websocket" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
