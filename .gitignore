@@ -13,6 +13,7 @@ classes
 gen### Java template
 # Compiled class file
 *.class
+1
 
 # Log file
 *.log
